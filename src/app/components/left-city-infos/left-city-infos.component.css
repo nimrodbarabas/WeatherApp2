@@ -4,6 +4,7 @@
 
 .city {
   margin-bottom: -20px;
+  color: white !important;
 }
 .infos {
   font-size: smaller;

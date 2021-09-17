@@ -2,12 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 .container {
   max-width: 1400px;
-  margin: 30px auto;
+  margin: auto;
+  margin-top: 140px;
   overflow: hidden;
   max-height: 700px;
   border: 1px solid black;
   border-radius: 5px;
   color: white;
+}
+p {
+  color: #bebebe;
 }
 
 body {

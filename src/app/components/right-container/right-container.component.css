@@ -1,13 +1,14 @@
 .right-container {
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 20px;
+  padding-top: 20px;
   max-height: 60%;
-
+  padding-bottom: 30px;
   overflow-y: scroll;
-  background-color: black;
+
   -ms-overflow-style: none;
   scrollbar-width: none;
+  background-color: black;
 }
 
 .right-container::-webkit-scrollbar {
