@@ -7,6 +7,7 @@
   max-height: 700px;
   border: 1px solid black;
   border-radius: 5px;
+  color: white;
 }
 
 body {
@@ -14,8 +15,10 @@ body {
 }
 
 .form-control input {
+  font-family: "Poppins", sans-serif;
   width: 90%;
   border-style: none;
+  background: none;
 }
 
 .form-control input:focus {
