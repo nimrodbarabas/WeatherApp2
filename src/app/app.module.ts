@@ -11,6 +11,8 @@ import { RightCitiesComponent } from './components/right-cities/right-cities.com
 import { RightDetailsComponent } from './components/right-details/right-details.component';
 import { RightDetailsElementComponent } from './components/right-details-element/right-details-element.component';
 import { RightDaysComponent } from './components/right-days/right-days.component';
+import { LeftCityInfosComponent } from './components/left-city-infos/left-city-infos.component';
+import { LeftCityWeatherComponent } from './components/left-city-weather/left-city-weather.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RightDaysComponent } from './components/right-days/right-days.component
     RightCitiesComponent,
     RightDetailsComponent,
     RightDetailsElementComponent,
-    RightDaysComponent
+    RightDaysComponent,
+    LeftCityInfosComponent,
+    LeftCityWeatherComponent
   ],
   imports: [
     BrowserModule,
