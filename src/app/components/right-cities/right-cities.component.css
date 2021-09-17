@@ -1,0 +1,8 @@
+.right-cities {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

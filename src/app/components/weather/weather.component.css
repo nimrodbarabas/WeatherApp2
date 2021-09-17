@@ -1,0 +1,14 @@
+.weather {
+  display: flex;
+  flex: 1;
+}
+
+.weather-left {
+  flex: 0.6;
+  border-right: 0.5px solid black;
+  height: 700px;
+}
+
+.weather-right {
+  flex: 0.4;
+}

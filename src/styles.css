@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  max-width: 1400px;
+  margin: 30px auto;
+  overflow: hidden;
+  max-height: 700px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-control input {
+  width: 90%;
+  border-style: none;
+}
+
+.form-control input:focus {
+  outline: none;
+}

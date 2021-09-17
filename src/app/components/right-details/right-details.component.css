@@ -1,0 +1,7 @@
+.right-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 0.5px solid grey;
+  padding-bottom: 10px;
+}
