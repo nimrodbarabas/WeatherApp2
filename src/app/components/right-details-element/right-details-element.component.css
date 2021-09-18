@@ -1,4 +1,9 @@
 .details-element {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.details-element-p:hover {
+  color: white;
 }

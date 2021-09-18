@@ -9,4 +9,9 @@
 
 .right-cities p {
   font-weight: lighter;
+  cursor: pointer;
+}
+
+.right-cities p:hover {
+  color: white;
 }

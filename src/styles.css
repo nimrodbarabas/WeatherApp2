@@ -23,6 +23,7 @@ body {
   width: 90%;
   border-style: none;
   background: none;
+  color: white;
 }
 
 .form-control input:focus {
