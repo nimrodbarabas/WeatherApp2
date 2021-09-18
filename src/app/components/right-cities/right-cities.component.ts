@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherService } from 'src/app/services/weather.service';
 
 @Component({
   selector: 'app-right-cities',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RightCitiesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private weatherService : WeatherService) { }
 
   ngOnInit(): void {
+  }
+
+  toggleSearch(city:string){
+    
+    this.weatherService.toggleSearch(city)
   }
 
 }
