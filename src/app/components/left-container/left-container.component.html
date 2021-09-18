@@ -1,5 +1,5 @@
 <div class="left-container">
-    <p>26<span>&#176;</span></p>
-    <app-left-city-infos ></app-left-city-infos>
-    <app-left-city-weather></app-left-city-weather>
+    <p>{{weather?.main.temp}}<span>&#176;</span></p>
+    <app-left-city-infos [weather]="weather"></app-left-city-infos>
+    <app-left-city-weather [weather]="weather" ></app-left-city-weather>
 </div>

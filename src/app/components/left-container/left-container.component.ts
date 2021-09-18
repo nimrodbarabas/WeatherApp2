@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input ,OnChanges, SimpleChange} from '@angular/core';
+import { Weather } from 'src/Weather';
+import { WeatherComponent } from '../weather/weather.component';
 
 @Component({
   selector: 'app-left-container',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftContainerComponent implements OnInit {
 
+ @Input() weather !:any
+  roundedCelsius : number = 0
+
+  
   constructor() { }
 
   ngOnInit(): void {
-  }
+    }
+
+  
+ 
+
+  
 
 }
