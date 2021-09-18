@@ -11,5 +11,5 @@ export class RightContainerComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

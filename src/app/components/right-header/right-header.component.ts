@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Output , EventEmitter } from '@angular/core';
+import { WeatherService } from 'src/app/services/weather.service';
+
 
 @Component({
   selector: 'app-right-header',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RightHeaderComponent implements OnInit {
 
-  constructor() { }
+
+  
+  city !: string ;
+
+  constructor(private weatherService : WeatherService ) { }
 
   ngOnInit(): void {
   }
+
+  toggleSearch(){
+    console.log("clicked")
+    this.weatherService.toggleSearch(this.city);
+  }
+
+
+     
+  
 
 }
