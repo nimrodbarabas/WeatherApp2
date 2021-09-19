@@ -11,6 +11,7 @@ import { Weather } from 'src/Weather';
 export class WeatherComponent implements OnInit {
   weather !: Weather  ;
   subscription !: Subscription;
+  
 
   constructor(private weatherService : WeatherService) {
       this.subscription = this.weatherService.onToggle().subscribe(value => this.weatherService.getSpecificForecast(value).subscribe((res)=>this.weather = res))

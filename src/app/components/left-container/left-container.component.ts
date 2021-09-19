@@ -1,4 +1,4 @@
-import { Component, OnInit , Input ,OnChanges, SimpleChange} from '@angular/core';
+import { Component, OnInit , Input ,OnChanges, SimpleChange , } from '@angular/core';
 import { Weather } from 'src/Weather';
 import { WeatherComponent } from '../weather/weather.component';
 
@@ -16,7 +16,14 @@ export class LeftContainerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if(this.weather)
+    console.log("ready")
+    console.log("check", this.weather)
     }
+    
+    
+
+    
 
   
  
