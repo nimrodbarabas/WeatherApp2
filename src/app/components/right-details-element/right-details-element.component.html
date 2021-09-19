@@ -1,4 +1,4 @@
-<div class="details-element">
-    <p class="details-element-p">Cloudy</p>
-    <p class="details-element-p">86%</p>
+<div *ngIf="main" class="details-element">
+    <p class="details-element-p">{{desc }}</p>
+    <p class="details-element-p">{{main }} <span>{{unit}}</span></p>
 </div>

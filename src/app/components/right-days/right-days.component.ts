@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input } from '@angular/core';
 
 @Component({
   selector: 'app-right-days',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./right-days.component.css']
 })
 export class RightDaysComponent implements OnInit {
+
+  @Input() main !:any
 
   constructor() { }
 

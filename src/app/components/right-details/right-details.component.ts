@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input } from '@angular/core';
+import { Weather } from 'src/Weather';
 
 @Component({
   selector: 'app-right-details',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./right-details.component.css']
 })
 export class RightDetailsComponent implements OnInit {
+
+  @Input() main !: any
+ 
 
   constructor() { }
 

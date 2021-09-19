@@ -1,5 +1,6 @@
 export interface Weather {
     
+        
         coord : object;
         baste : string;
         weather : [];

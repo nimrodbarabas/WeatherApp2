@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input } from '@angular/core';
 
 @Component({
   selector: 'app-right-details-element',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RightDetailsElementComponent implements OnInit {
 
+  @Input() main : any
+  @Input() desc !:string
+  @Input() unit !:string
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

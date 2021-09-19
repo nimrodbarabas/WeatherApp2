@@ -10,15 +10,12 @@ import { WeatherComponent } from '../weather/weather.component';
 export class LeftContainerComponent implements OnInit {
 
  @Input() weather !:any
-  roundedCelsius : number = 0
-
+  
   
   constructor() { }
 
   ngOnInit(): void {
-    if(this.weather)
-    console.log("ready")
-    console.log("check", this.weather)
+    
     }
     
     

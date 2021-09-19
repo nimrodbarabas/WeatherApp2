@@ -1,6 +1,8 @@
-<div class="right-details">
+<div *ngIf="main" class="right-details">
     <h4>Weather Details</h4>
-    <app-right-details-element></app-right-details-element>
-    <app-right-details-element></app-right-details-element>
-    <app-right-details-element></app-right-details-element>
+    <app-right-details-element  desc="Feels Like" [main]="main.feels_like" unit = "&#176;" ></app-right-details-element>
+    <app-right-details-element  desc="Max Temperature" [main]="main.temp_max" unit = "&#176;"></app-right-details-element>
+    <app-right-details-element   desc="Min Temperature" [main]="main.temp_min" unit = "&#176;"></app-right-details-element>
+    <app-right-details-element   desc="Humidity" [main]="main.humidity" unit = "%"></app-right-details-element>
+    <app-right-details-element   desc="Pressure" [main]="main.pressure" unit = "PS"></app-right-details-element>
 </div>
