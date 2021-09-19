@@ -18,9 +18,14 @@ export class RightContainerComponent implements OnInit {
   tempMin !: number;
   main !: object;
   subscription !: Subscription;
+  coord !: object
   
   constructor(private weatherService : WeatherService) { 
-    this.subscription = this.weatherService.onToggle().subscribe(value => this.weatherService.getSpecificForecast(value).subscribe((res)=>this.main = res.main))
+    this.subscription = this.weatherService.onToggle()
+    .subscribe(value => this.weatherService.getSpecificForecast(value)
+    .subscribe((res)=>{
+      this.coord = res.coord
+      this.main = res.main}))
   }
 
   ngOnInit(): void {

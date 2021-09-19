@@ -31,6 +31,10 @@ export class WeatherService {
     return this.subject.asObservable()
   }
 
+  getDaysForecast():Observable<Weather>{
+    return this.http.get<Weather>(`https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly&units=metric&appid=4f47a4edc02cb72ac89508da08c914c5`)
+  }
+
   getSpecificForecast(city:string):Observable<Weather>{
     const url= `${this.apiUrl}=${city}&${this.apiKey}`
     return this.http.get<Weather>(url)
