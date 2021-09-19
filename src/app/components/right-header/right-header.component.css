@@ -14,3 +14,15 @@
 .svg:hover {
   color: white;
 }
+
+.form-btn {
+  color: grey;
+  background: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  color: white;
+}
