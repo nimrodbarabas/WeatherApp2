@@ -10,6 +10,8 @@ import { WeatherComponent } from '../weather/weather.component';
 export class LeftContainerComponent implements OnInit {
 
  @Input() weather !:any
+ @Input() timeZone !: string
+ @Input() temperature !:number
   
   
   constructor() { }

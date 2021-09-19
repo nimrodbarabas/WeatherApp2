@@ -2,7 +2,13 @@
     <div class="right-container-blur">
     <app-right-header></app-right-header>
     <app-right-cities></app-right-cities>
-    <app-right-details [main]="main"></app-right-details>
+    <app-right-details 
+        [main]="main" 
+        [tempMax]="tempMax"
+        [feelsLike]="feelsLike"
+        [tempMin]="tempMin"
+        >
+    </app-right-details>
     <app-right-days [main]="main" [coord]="coord"></app-right-days>
     </div>
     

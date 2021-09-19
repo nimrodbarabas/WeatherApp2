@@ -9,6 +9,9 @@ import { Weather } from 'src/Weather';
 export class RightDetailsComponent implements OnInit {
 
   @Input() main !: any
+  @Input() tempMax !: number;
+  @Input() tempMin !: number;
+  @Input() feelsLike !: number 
  
 
   constructor() { }

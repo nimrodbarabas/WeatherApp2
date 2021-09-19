@@ -1,5 +1,5 @@
-<div class="left-container">
-    <p>{{weather?.main.temp}}<span>&#176;</span></p>
-    <app-left-city-infos [weather]="weather"></app-left-city-infos>
+<div class="left-container" *ngIf="weather">
+    <p>{{temperature}}<span>&#176;</span></p>
+    <app-left-city-infos [weather]="weather" timeZone = "timeZone"></app-left-city-infos>
     <app-left-city-weather [weather]="weather" ></app-left-city-weather>
 </div>

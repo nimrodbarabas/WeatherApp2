@@ -8,16 +8,16 @@ import { Weather } from 'src/Weather';
   styleUrls: ['./left-city-infos.component.css']
 })
 export class LeftCityInfosComponent implements OnInit {
-  time !: string;
-  @Input() weather !: any
+
+  @Input() weather !: any;
+  @Input() timeZone !: string;
+ 
+  today :number = Date.now();
+  
   constructor() { }
 
   ngOnInit(): void {
-    
+  
   }
-  ngOnChanges (changes : SimpleChange) :void {
-   
-    this.time = new Date(1631967757*1000).toLocaleString() ; 
-    console.log(this.time)
-  }
+  
 }

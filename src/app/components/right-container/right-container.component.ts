@@ -24,6 +24,10 @@ export class RightContainerComponent implements OnInit {
     this.subscription = this.weatherService.onToggle()
     .subscribe(value => this.weatherService.getSpecificForecast(value)
     .subscribe((res)=>{
+
+      Object.entries(res.main).map(el => {if(el[0]==="feels_like") this.feelsLike=Math.round(el[1])})
+      Object.entries(res.main).map(el => {if(el[0]==="temp_max") this.tempMax=Math.round(el[1])})
+      Object.entries(res.main).map(el => {if(el[0]==="temp_min") this.tempMin=Math.round(el[1])})
       this.coord = res.coord
       this.main = res.main}))
   }
@@ -32,6 +36,10 @@ export class RightContainerComponent implements OnInit {
 
     this.weatherService.getBaseForecast().subscribe((res) => {
       this.main = res.main
+      Object.entries(res.main).map(el => {if(el[0]==="feels_like") this.feelsLike=Math.round(el[1])})
+      Object.entries(res.main).map(el => {if(el[0]==="temp_max") this.tempMax=Math.round(el[1])})
+      Object.entries(res.main).map(el => {if(el[0]==="temp_min") this.tempMin=Math.round(el[1])})
+      
     })
   }
   
